@@ -52,7 +52,7 @@ class ControleNetwork extends Controller
             $descricoes->descricao_texto = $request->descricao;
             $descricoes->redes_id = $redes->id;
             $descricoes->data_comentario = $datahora;
-            $descricoes->alteracoes = " Este Item Foi Cadastrado.";
+            $descricoes->alteracoes = " Este Item Foi Cadastrado!";
 
             $descricoes->save();
             return redirect('/dashboard');
