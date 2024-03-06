@@ -72,7 +72,7 @@ class ControleCadastro extends Controller
             $descricoes->descricao_texto = $request->descricao;
             $descricoes->computadores_id = $computadores->id;
             $descricoes->data_comentario = $datahora;
-            $descricoes->alteracoes = " Este Item Foi Cadastrado.";
+            $descricoes->alteracoes = " Este Item Foi Cadastrado!";
 
             $descricoes->save();
             return redirect('/dashboard');
@@ -201,9 +201,9 @@ class ControleCadastro extends Controller
             }
             if ($computadores->status != $request->status) {
                 if ($request->status == null) {
-                    $alteracoes = $alteracoes.' '.',  Desativou Essa Maquina. ';
+                    $alteracoes = $alteracoes.' '.',  Desativou Essa Maquina! ';
                 } elseif ($request->status == 'on') {
-                    $alteracoes = $alteracoes.' '.', Reativou Essa Maquina. ';
+                    $alteracoes = $alteracoes.' '.', Reativou Essa Maquina! ';
                 }
             }
             if($computadores->situacao != $request->situacao){
