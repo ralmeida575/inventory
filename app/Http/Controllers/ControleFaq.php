@@ -42,7 +42,7 @@ class ControleFaq extends Controller
             $descricoes->descricao_texto = $request->descricao;
             $descricoes->faq_id = $faq->id;
             $descricoes->data_comentario = $datahora;
-            $descricoes->alteracoes = " Este Item Foi Cadastrado.";
+            $descricoes->alteracoes = " Este Item Foi Cadastrado!";
 
             $descricoes->save();
             return redirect('/dashboard');
