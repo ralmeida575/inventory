@@ -72,7 +72,7 @@ class ControleCadastro extends Controller
             $descricoes->descricao_texto = $request->descricao;
             $descricoes->computadores_id = $computadores->id;
             $descricoes->data_comentario = $datahora;
-            $descricoes->alteracoes = " Este Item Foi Cadastrado.";
+            $descricoes->alteracoes = " Este Item Foi Cadastrado!";
 
             $descricoes->save();
             return redirect('/dashboard');
