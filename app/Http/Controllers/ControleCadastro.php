@@ -201,9 +201,9 @@ class ControleCadastro extends Controller
             }
             if ($computadores->status != $request->status) {
                 if ($request->status == null) {
-                    $alteracoes = $alteracoes.' '.',  Desativou Essa Maquina. ';
+                    $alteracoes = $alteracoes.' '.',  Desativou Essa Maquina! ';
                 } elseif ($request->status == 'on') {
-                    $alteracoes = $alteracoes.' '.', Reativou Essa Maquina. ';
+                    $alteracoes = $alteracoes.' '.', Reativou Essa Maquina! ';
                 }
             }
             if($computadores->situacao != $request->situacao){
