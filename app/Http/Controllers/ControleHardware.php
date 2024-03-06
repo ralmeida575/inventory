@@ -41,7 +41,7 @@ class ControleHardware extends Controller
             $descricoes->descricao_texto = $request->descricao;
             $descricoes->hardware_id = $hardware->id;
             $descricoes->data_comentario = $datahora;
-            $descricoes->alteracoes = " Este Item Foi Cadastrado.";
+            $descricoes->alteracoes = " Este Item Foi Cadastrado!";
 
             $descricoes->save();
             return redirect('/dashboard');
