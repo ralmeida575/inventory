@@ -34,7 +34,7 @@
     <option  value="Não">Não</option>
     <option  value="Sim">Sim</option>
 </select>
-<x-label>Placa de Video Off Board?</x-label>
+<x-label>Placa de Video Off Board:</x-label>
 <select class="select border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm" name="placaVideo" id="placaVideo" >
     <option value={{$computadores->placa_video}}>{{$computadores->placa_video}}</option>
     <option value="Não">Não</option>
