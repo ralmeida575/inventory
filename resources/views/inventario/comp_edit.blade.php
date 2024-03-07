@@ -71,7 +71,7 @@
 </div>
 <div >
     <div class="switch__container">
-        <x-label>Status</x-label>
+        <x-label>Status:</x-label>
         @if($computadores->status == 'on')<x-input id="status" name="status" class="switch switch--shadow" onchange="verificarCheckBox()" type="checkbox" checked /><x-label for="status"></x-label>
         @else  <x-input id="status" name="status" class="switch switch--shadow" onchange="verificarCheckBox()" type="checkbox" /><x-label for="status"></x-label>
         @endif     
