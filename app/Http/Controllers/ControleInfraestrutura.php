@@ -40,7 +40,7 @@ class ControleInfraestrutura extends Controller
             $descricoes->descricao_texto = $request->descricao;
             $descricoes->infraestrutura_id = $infraestrutura->id;
             $descricoes->data_comentario = $datahora;
-            $descricoes->alteracoes = " Este Item Foi Cadastrado.";
+            $descricoes->alteracoes = " Este Item Foi Cadastrado!";
             $descricoes->save();
             return redirect('/dashboard');
     /* $user = auth()->user(); // pega o usuario logado*/
